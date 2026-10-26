@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Nexyuga Innovations | Empowering Every Child to Learn with Independence</title>
+  <meta name="description" content="Nexyuga develops tactile, Braille-based and audio-supported learning solutions (Vithara) and an inclusive digital community (Knotnex) for visually impaired learners.">
+  <meta name="keywords" content="Nexyuga, Vithara, Knotnex, BuddyBook, assistive technology, tactile books, Braille learning, visually impaired children, CSR partnerships, inclusive education, STEM accessibility">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Nexyuga Innovations | A Future Where Every Child Can Learn with Independence">
+  <meta property="og:description" content="Affordable tactile, Braille-based and audio-supported learning tools engineered to bridge the 99% Braille literacy crisis.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo-dark.png">
+
+  <!-- Google Fonts Preconnect & Stylesheets (Poppins 300/400/500/600/700 & Inter) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Oswald:wght@600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Design System CSS (Adorbit Architecture with Nexyuga Blue & Green) -->
+  <link rel="stylesheet" href="css/tokens.css?v=18">
+  <link rel="stylesheet" href="css/base.css?v=18">
+  <link rel="stylesheet" href="css/components.css?v=18">
+  <link rel="stylesheet" href="css/main.css?v=18">
+</head>
+<body>
+
+  <!-- Ambient Radial Light Glow -->
+  <div class="bg-radial-glow"></div>
+
+  <!-- ==========================================================================
+       ADORBIT SIGNATURE APP BAR (Left Logo • Center White Capsule • Right Actions)
+       ========================================================================== -->
+  <header class="site-appbar" id="appbar">
+    <div class="appbar-container">
+      <!-- Left: Brand Logo & Language Selector Group -->
+      <div class="appbar-left-group">
+        <a href="#home" class="appbar-brand" aria-label="Nexyuga Innovations">
+          <img src="assets/images/logo-light.png" alt="Nexyuga Logo" class="appbar-brand-img">
+        </a>
+        <div class="lang-selector-pill-glass" id="langSelector" title="Switch Language" tabindex="0" role="button" aria-haspopup="true">
+          <span class="lang-flag">🇬🇧</span>
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M6 9l6 6 6-6"/>
+          </svg>
+          <div class="lang-dropdown-menu">
+            <div class="lang-option" data-lang="en"><span>🇬🇧</span> English</div>
+            <div class="lang-option" data-lang="hi"><span>🇮🇳</span> हिन्दी (Hindi)</div>
+            <div class="lang-option" data-lang="ta"><span>🇮🇳</span> தமிழ் (Tamil)</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center: Signature Floating White Capsule Menu -->
+      <nav class="appbar-center-capsule" aria-label="Primary Navigation">
+        <a href="#home" class="appbar-nav-link active">Home</a>
+        <a href="#journey" class="appbar-nav-link">Our Journey</a>
+        <a href="#products" class="appbar-nav-link">Products</a>
+        <a href="#partner" class="appbar-nav-link">Partner with us</a>
+        <a href="careers.html" class="appbar-nav-link">Careers</a>
+      </nav>
+
+      <!-- Right: Glass Pill CTA Button & Mobile Toggle -->
+      <div class="appbar-actions">
+        <a href="#partner" class="btn-appbar-glass btn-rolling">
+          <div class="btn-rolling-track">
+            <span class="btn-rolling-text">Partner With Us</span>
+            <span class="btn-rolling-text">Partner With Us</span>
+          </div>
+        </a>
+
+        <!-- Mobile Drawer Hamburger Toggle -->
+        <button class="appbar-mobile-toggle mobile-nav-toggle" aria-label="Toggle Mobile Navigation" style="color: #ffffff;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="drawer-backdrop"></div>
+  <aside class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="nav-brand">
+        <img src="assets/images/logo-dark.png" alt="Nexyuga" class="nav-brand-img" style="height: 32px;">
+      </div>
+      <button class="drawer-close-btn" style="color: var(--color-text-primary); font-size: 28px; cursor: pointer;" aria-label="Close menu">&times;</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#home" class="drawer-link active">Home</a>
+      <a href="#journey" class="drawer-link">Our Journey</a>
+      <a href="#products" class="drawer-link">Products</a>
+      <a href="#partner" class="drawer-link">Partner with us</a>
+      <a href="careers.html" class="drawer-link">Careers</a>
+    </div>
+    <div style="margin-top: auto;">
+      <a href="#partner" class="btn btn-primary btn-rolling" style="width: 100%;">
+        <div class="btn-rolling-track">
+          <span class="btn-rolling-text">Partner With Us</span>
+          <span class="btn-rolling-text">Partner With Us</span>
+        </div>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HERO SECTION (Exact Desktop - 23.png Forest Green Canvas with 3D Characters)
+       ========================================================================== -->
+  <section class="hero-section hero-forest-green" id="home">
+    
+    <!-- Concentric Orbital Stroke Lines & Floating Chip Particles (Adorbit Hero Architecture) -->
+    <div class="hero-orbits-container" aria-hidden="true">
+      <!-- 5 Concentric Orbital Stroke Rings -->
+      <div class="hero-orbit-ring orbit-ring-1"></div>
+      <div class="hero-orbit-ring orbit-ring-2"></div>
+      <div class="hero-orbit-ring orbit-ring-3"></div>
+      <div class="hero-orbit-ring orbit-ring-4"></div>
+      <div class="hero-orbit-ring orbit-ring-5"></div>
+
+      <!-- Floating Chip Particles (Matching exact colors and icons from reference) -->
+      <!-- 1. Top-Left: Blue Briefcase (Assistive Kits) -->
+      <div class="hero-chip-particle chip-blue chip-top-left" title="Tactile Assistive Kits">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+        </svg>
+      </div>
+
+      <!-- 2. Mid-Left: Green Trending-Up (Measurable Literacy Growth) -->
+      <div class="hero-chip-particle chip-green chip-mid-left" title="Literacy Growth">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/>
+          <polyline points="17 6 23 6 23 12"/>
+        </svg>
+      </div>
+
+      <!-- 3. Bottom-Left: Gold Coin Pouch (Affordable Assistive Tools) -->
+      <div class="hero-chip-particle chip-gold chip-bottom-left" title="Affordable Access">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 4h-2a2 2 0 0 0-4 0H8a1 1 0 0 0-1 1v1c0 1.5-1.5 2.5-1.5 4.5 0 4.14 3.36 7.5 7.5 7.5s7.5-3.36 7.5-7.5c0-2-1.5-3-1.5-4.5V5a1 1 0 0 0-1-1z"/>
+          <circle cx="12" cy="12" r="2.5" fill="currentColor"/>
+        </svg>
+      </div>
+
+      <!-- 4. Top-Right: Plum Heart / Care (Empathy & Inclusion) -->
+      <div class="hero-chip-particle chip-plum chip-top-right" title="Inclusive Care">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </div>
+
+      <!-- 5. Mid-Right: Gold Coin Pouch (CSR Partnerships & Grants) -->
+      <div class="hero-chip-particle chip-gold chip-mid-right" title="CSR Impact">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 4h-2a2 2 0 0 0-4 0H8a1 1 0 0 0-1 1v1c0 1.5-1.5 2.5-1.5 4.5 0 4.14 3.36 7.5 7.5 7.5s7.5-3.36 7.5-7.5c0-2-1.5-3-1.5-4.5V5a1 1 0 0 0-1-1z"/>
+          <circle cx="12" cy="12" r="2.5" fill="currentColor"/>
+        </svg>
+      </div>
+
+      <!-- 6. Bottom-Right: Blue Briefcase (Assistive Kit Deployment) -->
+      <div class="hero-chip-particle chip-blue chip-bottom-right" title="Kit Deployment">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="hero-forest-content">
+      <div class="hero-forest-text-group">
+        <h1 class="hero-forest-title">
+          Empowering Every Child to Learn with Independence
+        </h1>
+
+        <p class="hero-forest-subtitle">
+          Tactile, Braille-based and audio-supported learning tools engineered to bridge the Braille literacy crisis and empower visually impaired children worldwide.
+        </p>
+
+        <div class="hero-forest-cta-wrap">
+          <a href="#partner" class="btn-hero-cta btn-rolling" id="heroPartnerCta">
+            <div class="btn-rolling-track">
+              <span class="btn-rolling-text">Partner with us</span>
+              <span class="btn-rolling-text">Partner with us</span>
+            </div>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-forest-characters">
+        <img src="assets/images/hero_character_team.png" 
+             alt="Joyful diverse team collaborating on independent learning and inclusive innovation" 
+             class="hero-forest-characters-img">
+      </div>
+    </div>
+
+    <!-- Ribbon Card / Ticker Strip (Anchored alone at the bottom of the Hero Section) -->
+    <div class="marquee-wrapper" aria-label="Brand Highlights and Mission Pillars">
+      <div class="marquee-content">
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Methodology</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Insights</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Our Thinking</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Research</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Tactile-Audio Learning</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Braille Literacy</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Vithara System</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Knotnex Community</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Independent Exploration</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>CSR Partnerships</span></div>
+        <!-- Seamless loop duplicate -->
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Methodology</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Insights</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Our Thinking</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Research</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Tactile-Audio Learning</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Braille Literacy</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Vithara System</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Knotnex Community</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>Independent Exploration</span></div>
+        <div class="marquee-item"><span class="marquee-bullet">•</span><span>CSR Partnerships</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FEATURED VIDEO SHOWCASE SECTION (Adorbit Architecture - 2nd Section)
+       Spotlights the official Nexyuga assistive innovation YouTube video
+       ========================================================================== -->
+  <section class="video-showcase-section" id="video-tour" aria-label="Nexyuga Product Video Showcase">
+    <div class="video-showcase-container">
+      
+      <!-- Adorbit Signature Kicker Pill -->
+      <div class="video-kicker-pill">
+        <span class="video-kicker-dot"></span>
+        <span>Assistive Technology In Action</span>
+      </div>
+
+      <!-- Section Title & Subtitle -->
+      <h2 class="video-section-title">See Nexyuga In Action</h2>
+      <p class="video-section-subtitle">
+        Watch how our tactile books and audio-guided smart learning kits transform early education and build true independence for visually impaired children worldwide.
+      </p>
+
+      <!-- Adorbit Featured Video Card Bezel -->
+      <div class="video-card-bezel" id="videoCardBezel">
+        <div class="video-card-inner" id="videoContainer" data-video-id="U79oCZsotd8">
+          
+          <!-- High-Res Thumbnail Poster & Interactive Overlay -->
+          <div class="video-poster-wrapper" id="videoPoster">
+            <img src="https://i.ytimg.com/vi/U79oCZsotd8/maxresdefault.jpg" 
+                 alt="Nexyuga Assistive Learning Kit Demonstration Video" 
+                 class="video-poster-img"
+                 loading="lazy">
+            <div class="video-poster-vignette"></div>
+
+            <!-- Adorbit-Style Pulsing Center Play Button -->
+            <button class="video-play-btn" id="videoPlayBtn" aria-label="Play Nexyuga demonstration video">
+              <span class="video-play-pulse video-pulse-1" aria-hidden="true"></span>
+              <span class="video-play-pulse video-pulse-2" aria-hidden="true"></span>
+              <span class="video-play-disc">
+                <svg class="video-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11-6.86a1 1 0 0 0 0-1.72L9.5 4.28a1 1 0 0 0-1.5.86z"/>
+                </svg>
+              </span>
+            </button>
+
+            <!-- Bottom Floating Badges (Adorbit Signature Glass Elements) -->
+            <div class="video-floating-bar" aria-hidden="true">
+              <div class="video-floating-badge-left">
+                <span class="video-live-dot"></span>
+                <span class="video-badge-text">Nexyuga Innovations • Tactile Learning Kits</span>
+              </div>
+              <div class="video-floating-badge-right">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+                </svg>
+                <span>Click to Watch Video</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- YouTube Player Container (Loaded dynamically on user click) -->
+          <div class="video-iframe-slot" id="videoIframeSlot"></div>
+        </div>
+      </div>
+
+      <!-- External YouTube Link Pill -->
+      <div class="video-external-row">
+        <a href="https://youtu.be/U79oCZsotd8?si=mIFf_8U0kceyuQ2h" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="video-youtube-pill">
+          <svg class="youtube-svg-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+          </svg>
+          <span>Watch Directly on YouTube</span>
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PROBLEM & MISSION SECTION (Editorial Light Canvas)
+       ========================================================================== -->
+  <section class="section section-light" id="about">
+    <div class="container">
+      <div class="section-header">
+        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 4px;">
+          <img src="assets/images/logo-dark.png" alt="Nexyuga Logo" style="height: 32px; width: auto; object-fit: contain;">
+          <div class="badge-pill badge-teal-light">
+            <span class="badge-dot"></span>
+            <span>The Challenge We Solve</span>
+          </div>
+        </div>
+        <h2>Most Visually Impaired Children Never Get to Learn Independently</h2>
+        <p class="section-subtitle">
+          Over 90% of visually impaired individuals live in low-income settings. Conventional assistive aids are cluttered with high costs, rigid mechanical parts, and inaccessible distribution. Nexyuga rebuilt tactile learning from the ground up.
+        </p>
+      </div>
+
+      <div class="services-bento-grid">
+        <!-- Problem Card 1 -->
+        <div class="card-bento service-card-span-7">
+          <div class="card-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+          </div>
+          <span class="badge-pill badge-blue" style="margin-bottom: 12px;">Severe Literacy Bottleneck</span>
+          <h3>The 99% Braille Literacy Gap</h3>
+          <p>
+            In developing regions, less than 1% of visually impaired children have access to interactive Braille or tactile books. Without early tactile literacy, children face permanent educational barriers in STEM and higher education.
+          </p>
+
+          <div class="problem-vs-box">
+            <div class="problem-col legacy">
+              <div class="problem-col-title">CONVENTIONAL AIDS</div>
+              <div class="problem-col-highlight">₹40,000 – ₹1,50,000</div>
+              <div class="problem-col-desc">Prohibitive cost for government schools &amp; NGOs</div>
+            </div>
+            <div class="problem-col nexyuga">
+              <div class="problem-col-title">NEXYUGA VITHARA</div>
+              <div class="problem-col-highlight">Accessible &amp; CSR-Ready</div>
+              <div class="problem-col-desc">Durable, tactile-audio books built for scale</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem Card 2 -->
+        <div class="card-bento service-card-span-5 green-accent">
+          <div class="card-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <span class="badge-pill badge-green" style="margin-bottom: 12px;">Independence First</span>
+          <h3>Ending Complete Sighted Reliance</h3>
+          <p>
+            Children shouldn't need a continuous sighted tutor just to read a page. Vithara combines raised tactile diagrams with smart audio feedback so a child can explore and repeat independently at their own pace.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       PRODUCTS SECTION (Vithara & Knotnex Bento Grid)
+       ========================================================================== -->
+  <section class="section section-light" id="products">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill badge-green">
+          <span class="badge-dot"></span>
+          <span>Core Innovations</span>
+        </div>
+        <h2>Technology That Creates Independence in Education</h2>
+        <p class="section-subtitle">
+          Two complementary solutions designed to make classroom learning tactile, joyful, and connected to lifelong community opportunities.
+        </p>
+      </div>
+
+      <div class="services-bento-grid">
+        <!-- Product 1: Vithara -->
+        <div class="card-bento service-card-span-7">
+          <div class="card-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+          </div>
+          <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+            <span class="badge-pill badge-blue">Product 01</span>
+            <span class="badge-pill badge-green">Tactile &amp; Audio</span>
+          </div>
+          <h3>Meet Vithara</h3>
+          <p>
+            An affordable, durable tactile book system with embedded audio modules. Enables blind and low-vision children to independently touch, feel, and master Braille, STEM concepts, and foundational literacy without constant supervision.
+          </p>
+
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: var(--space-6);">
+            <div style="background: #f6fafd; padding: 14px; border-radius: 12px; border: 1px solid rgba(1, 151, 178, 0.12);">
+              <div style="font-weight: 600; color: var(--color-brand-blue); font-size: 0.85rem;">Literature</div>
+              <div style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 4px;">Alphabets, Braille letters, phonics</div>
+            </div>
+            <div style="background: #f6fafd; padding: 14px; border-radius: 12px; border: 1px solid rgba(1, 151, 178, 0.12);">
+              <div style="font-weight: 600; color: #2e7d32; font-size: 0.85rem;">Mathematics</div>
+              <div style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 4px;">Counting, shapes, tactile geometry</div>
+            </div>
+            <div style="background: #f6fafd; padding: 14px; border-radius: 12px; border: 1px solid rgba(1, 151, 178, 0.12);">
+              <div style="font-weight: 600; color: var(--color-brand-blue); font-size: 0.85rem;">Science</div>
+              <div style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 4px;">Audio-described diagrams &amp; textures</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Knotnex -->
+        <div class="card-bento service-card-span-5 green-accent">
+          <div class="card-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+            </svg>
+          </div>
+          <div style="display: flex; gap: 8px; margin-bottom: 12px;">
+            <span class="badge-pill badge-green">Product 02</span>
+            <span class="badge-pill badge-dark">Digital Network</span>
+          </div>
+          <h3>Meet Knotnex</h3>
+          <p>
+            An inclusive digital ecosystem connecting visually impaired youth, educators, parents, and accessibility mentors. Discover tactile study guides, peer mentorship, audio learning repositories, and assistive career opportunities.
+          </p>
+
+          <div style="margin-top: auto; padding-top: var(--space-4);">
+            <div class="metric-pill green" style="width: 100%; justify-content: center; padding: 10px;">
+              Accessible Resources • Mentorship • Peer Community
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VISUAL GALLERY & FIELD DEPLOYMENTS (Using User Images)
+       ========================================================================== -->
+  <section class="section section-light" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill badge-teal-light">
+          <span class="badge-dot"></span>
+          <span>Field Deployments &amp; Validation</span>
+        </div>
+        <h2>Hands-On Crafts, Classrooms &amp; Multi-Sensory Moments</h2>
+        <p class="section-subtitle">
+          Real moments from prototype testing, student engagement, national innovation summits, and community interactions.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Gallery 1: Prototype Testing -->
+        <article class="project-card">
+          <div class="project-image-wrap">
+            <img src="assets/images/gallery_prototype_testing.png" alt="Prototype Testing and Hardware Prototyping" loading="lazy">
+          </div>
+          <div class="project-content">
+            <span class="badge-pill badge-blue" style="margin-bottom: 12px;">R&amp;D Lab &amp; Ergonomics</span>
+            <h3>Tactile Testing &amp; Audio Module Validation</h3>
+            <p>
+              Engineering the 6-dot Braille layout, sensory haptic feedback, and audio module durability with direct learner feedback.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill">Active Prototyping</span>
+              <span class="metric-pill green">Multi-Sensory Feedback</span>
+              <span class="metric-pill">Field Tested</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Gallery 2: BuddyBook Presentation -->
+        <article class="project-card">
+          <div class="project-image-wrap">
+            <img src="assets/images/gallery_buddybook_presentation.png" alt="BuddyBook Presentation to Partners" loading="lazy">
+          </div>
+          <div class="project-content">
+            <span class="badge-pill badge-green" style="margin-bottom: 12px;">Ecosystem Demonstration</span>
+            <h3>BuddyBook Multi-Sensory Showcase</h3>
+            <p>
+              Demonstrating the integrated tactile-audio book system to special educators, disability foundations, and CSR directors.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill">Special Educators</span>
+              <span class="metric-pill green">Curriculum Ready</span>
+              <span class="metric-pill">Live Feedback</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Gallery 3: Team at IIC Meet -->
+        <article class="project-card">
+          <div class="project-image-wrap">
+            <img src="assets/images/gallery_iic_meet_2025_team.png" alt="Nexyuga Team at IIC Meet 2025" loading="lazy">
+          </div>
+          <div class="project-content">
+            <span class="badge-pill badge-blue" style="margin-bottom: 12px;">National Recognition</span>
+            <h3>IIC Regional Meet 2025 • @PSGCAS</h3>
+            <p>
+              Nexyuga team representing inclusive education at the prestigious Institution's Innovation Council (IIC) Regional Meet.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill">Ministry of Education (MIC)</span>
+              <span class="metric-pill green">AICTE Endorsed</span>
+              <span class="metric-pill">Top 75 Innovator</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Gallery 4: Founder Presentation -->
+        <article class="project-card">
+          <div class="project-image-wrap">
+            <img src="assets/images/gallery_iic_meet_2025_founder.png" alt="Founder Presentation at IIC Meet 2025" loading="lazy">
+          </div>
+          <div class="project-content">
+            <span class="badge-pill badge-green" style="margin-bottom: 12px;">Leadership &amp; Advocacy</span>
+            <h3>Founder Keynote &amp; Assistive Tech Pitch</h3>
+            <p>
+              Presenting Nexyuga’s vision for affordable inclusive learning to policymakers, venture leaders, and incubation directors.
+            </p>
+            <div class="project-metrics-row">
+              <span class="metric-pill">Policy Advocacy</span>
+              <span class="metric-pill green">Inclusive STEM</span>
+              <span class="metric-pill">Ecosystem Impact</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       OUR JOURNEY & UN SDGS SECTION
+       ========================================================================== -->
+  <section class="section section-light" id="journey">
+    <div id="sdgs" style="position: absolute; top: -80px;" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-header">
+        <div class="badge-pill badge-teal-light">
+          <span class="badge-dot"></span>
+          <span>Our Journey &amp; Milestones</span>
+        </div>
+        <h2>Contributing to a More Inclusive World</h2>
+        <p class="section-subtitle">
+          Our work directly aligns with the United Nations Sustainable Development Goals through our focus on accessible education, reduced inequalities, and multi-sector partnerships.
+        </p>
+      </div>
+
+      <div class="sdg-cards-grid">
+        <!-- SDG 4 -->
+        <div class="sdg-card">
+          <span class="sdg-number-badge sdg-4">UN SDG 4</span>
+          <h3 style="font-size: 1.4rem; color: #06191e; margin-bottom: 8px;">Quality Education</h3>
+          <p style="font-size: 0.9rem; color: rgba(10, 45, 54, 0.7);">
+            Supporting more inclusive and equitable access to curriculum-based learning for children who are blind or low vision.
+          </p>
+        </div>
+
+        <!-- SDG 10 -->
+        <div class="sdg-card">
+          <span class="sdg-number-badge sdg-10">UN SDG 10</span>
+          <h3 style="font-size: 1.4rem; color: #06191e; margin-bottom: 8px;">Reduced Inequalities</h3>
+          <p style="font-size: 0.9rem; color: rgba(10, 45, 54, 0.7);">
+            Working to eliminate the steep financial and technological barriers that prevent visually impaired youth from participating in STEM.
+          </p>
+        </div>
+
+        <!-- SDG 17 -->
+        <div class="sdg-card">
+          <span class="sdg-number-badge sdg-17">UN SDG 17</span>
+          <h3 style="font-size: 1.4rem; color: #06191e; margin-bottom: 8px;">Partnerships for the Goals</h3>
+          <p style="font-size: 0.9rem; color: rgba(10, 45, 54, 0.7);">
+            Collaborating with schools, NGOs, CSR partners, incubation centres, and policymakers to advance systemic inclusive learning.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. TESTIMONIALS SECTION (Reference Design Layout + NexYugaa Design System)
+       3-Column Architecture: Left Cards • Center Video Feature • Right Cards
+       ========================================================================== -->
+  <section class="testimonials-section" id="testimonials" aria-label="Community Testimonials">
+    <div class="testimonials-container">
+      
+      <!-- Section Header -->
+      <div class="testimonials-header">
+        <div class="testimonials-kicker">
+          <span class="testimonials-kicker-dot" aria-hidden="true"></span>
+          <span>Community Voices &amp; Real Stories</span>
+        </div>
+        <h2 class="testimonials-title">Real experiences from<br>the communities we serve</h2>
+        <p class="testimonials-subtitle">
+          We combine tactile innovation and specialized assistive engineering to achieve real, transformative educational independence.
+        </p>
+      </div>
+
+      <!-- 3-Column Showcase Grid -->
+      <div class="testimonials-showcase-grid">
+
+        <!-- Column 1 (Left): 2 Testimonial Cards -->
+        <div class="testimonials-column testimonials-column-left">
+          
+          <!-- Card 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon" aria-hidden="true">
+              <svg width="26" height="22" viewBox="0 0 28 24" fill="currentColor">
+                <path d="M7.5 0C3.36 0 0 3.36 0 7.5c0 4.14 3.36 7.5 7.5 7.5.35 0 .7-.02 1.04-.07C7.6 18.23 4.22 21 0 21.6v2.4c6.63 0 12-5.37 12-12V0H7.5zm15 0C18.36 0 15 3.36 15 7.5c0 4.14 3.36 7.5 7.5 7.5.35 0 .7-.02 1.04-.07C22.6 18.23 19.22 21 15 21.6v2.4c6.63 0 12-5.37 12-12V0h-4.5z"/>
+              </svg>
+            </div>
+            <p class="testimonial-quote-text">
+              “The team quickly turned slow learning curves into scalable, high-confidence Braille literacy with daily consistent progress across our entire pilot cohort.”
+            </p>
+            <div class="testimonial-author-row">
+              <img src="assets/images/testimonial-andress.jpg" alt="Andress K." class="testimonial-author-avatar" width="46" height="46" loading="lazy">
+              <div class="testimonial-author-info">
+                <h4 class="testimonial-author-name">Andress K.</h4>
+                <span class="testimonial-author-role">Founder &amp; Inclusive Tech Lead</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon" aria-hidden="true">
+              <svg width="26" height="22" viewBox="0 0 28 24" fill="currentColor">
+                <path d="M7.5 0C3.36 0 0 3.36 0 7.5c0 4.14 3.36 7.5 7.5 7.5.35 0 .7-.02 1.04-.07C7.6 18.23 4.22 21 0 21.6v2.4c6.63 0 12-5.37 12-12V0H7.5zm15 0C18.36 0 15 3.36 15 7.5c0 4.14 3.36 7.5 7.5 7.5.35 0 .7-.02 1.04-.07C22.6 18.23 19.22 21 15 21.6v2.4c6.63 0 12-5.37 12-12V0h-4.5z"/>
+              </svg>
+            </div>
+            <p class="testimonial-quote-text">
+              “Their expertise transformed stagnant tactile lessons into explosive, self-directed exploration, giving non-visual learners true independence and pride.”
+            </p>
+            <div class="testimonial-author-row">
+              <img src="assets/images/testimonial-elena.jpg" alt="Elena M." class="testimonial-author-avatar" width="46" height="46" loading="lazy">
+              <div class="testimonial-author-info">
+                <h4 class="testimonial-author-name">Elena M.</h4>
+                <span class="testimonial-author-role">Special Education Coordinator</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Column 2 (Center): Feature Video Portrait Card -->
+        <div class="testimonials-center-feature">
+          <div class="testimonial-video-card" id="testimonialVideoTrigger" role="button" tabindex="0" data-video-id="U79oCZsotd8" aria-label="Play video testimonial story of assistive learning impact">
+            <img src="assets/images/testimonial-portrait.jpg" alt="Educator sharing Nexyuga assistive tech experience" class="testimonial-video-img" width="460" height="580" loading="lazy">
+            
+            <div class="testimonial-video-overlay" aria-hidden="true"></div>
+
+            <button class="testimonial-play-btn" aria-label="Watch video testimonial" tabindex="-1">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                <polygon points="6 4 20 12 6 20 6 4"></polygon>
+              </svg>
+            </button>
+
+            <div class="testimonial-video-badge">
+              <span class="testimonial-video-badge-dot" aria-hidden="true"></span>
+              <span>Watch Story (2:14)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3 (Right): 2 Testimonial Cards -->
+        <div class="testimonials-column testimonials-column-right">
+
+          <!-- Card 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon" aria-hidden="true">
+              <svg width="26" height="22" viewBox="0 0 28 24" fill="currentColor">
+                <path d="M7.5 0C3.36 0 0 3.36 0 7.5c0 4.14 3.36 7.5 7.5 7.5.35 0 .7-.02 1.04-.07C7.6 18.23 4.22 21 0 21.6v2.4c6.63 0 12-5.37 12-12V0H7.5zm15 0C18.36 0 15 3.36 15 7.5c0 4.14 3.36 7.5 7.5 7.5.35 0 .7-.02 1.04-.07C22.6 18.23 19.22 21 15 21.6v2.4c6.63 0 12-5.37 12-12V0h-4.5z"/>
+              </svg>
+            </div>
+            <p class="testimonial-quote-text">
+              “Working with Nexyuga boosted our classroom engagement tenfold, driving measurable tactile fluency and joyful learning every single morning.”
+            </p>
+            <div class="testimonial-author-row">
+              <img src="assets/images/testimonial-david.jpg" alt="David S." class="testimonial-author-avatar" width="46" height="46" loading="lazy">
+              <div class="testimonial-author-info">
+                <h4 class="testimonial-author-name">David S.</h4>
+                <span class="testimonial-author-role">Inclusion Director &amp; Advocate</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon" aria-hidden="true">
+              <svg width="26" height="22" viewBox="0 0 28 24" fill="currentColor">
+                <path d="M7.5 0C3.36 0 0 3.36 0 7.5c0 4.14 3.36 7.5 7.5 7.5.35 0 .7-.02 1.04-.07C7.6 18.23 4.22 21 0 21.6v2.4c6.63 0 12-5.37 12-12V0H7.5zm15 0C18.36 0 15 3.36 15 7.5c0 4.14 3.36 7.5 7.5 7.5.35 0 .7-.02 1.04-.07C22.6 18.23 19.22 21 15 21.6v2.4c6.63 0 12-5.37 12-12V0h-4.5z"/>
+              </svg>
+            </div>
+            <p class="testimonial-quote-text">
+              “We never realized tactile feedback could integrate so seamlessly with synchronized audio until deploying this kit. It exceeded our highest institutional benchmarks.”
+            </p>
+            <div class="testimonial-author-row">
+              <img src="assets/images/testimonial-steveen.jpg" alt="Steveen L." class="testimonial-author-avatar" width="46" height="46" loading="lazy">
+              <div class="testimonial-author-info">
+                <h4 class="testimonial-author-name">Steveen L.</h4>
+                <span class="testimonial-author-role">Adaptive Learning Specialist</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Video Modal Player -->
+    <div class="testimonial-modal" id="testimonialModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Testimonial Video Player">
+      <div class="testimonial-modal-backdrop" id="testimonialModalBackdrop"></div>
+      <div class="testimonial-modal-content">
+        <button class="testimonial-modal-close" id="testimonialModalClose" aria-label="Close video player">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+        <div class="testimonial-modal-iframe-wrap">
+          <iframe id="testimonialVideoIframe" src="" title="Nexyuga Assistive Tech Impact Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       NUMBERS THAT TELL OUR STORY (Impact Showcase & Direct Collaboration)
+       ========================================================================== -->
+  <section class="section section-light bg-grid-pattern" id="partner">
+    <div class="container" id="impact">
+      <div class="story-card-wrapper">
+        <div class="story-numbers-card">
+          <!-- Top Left Organic Sunflower Blob -->
+          <div class="story-blob" aria-hidden="true"></div>
+
+          <div class="story-card-body">
+            <!-- Left Column: Title & Mission Statement -->
+            <div class="story-left-col">
+              <h2 class="story-title">Numbers That Tell Our Story</h2>
+              <p class="story-desc">
+                Nexyuga’s Vithara brings tactile, Braille-based and audio-supported learning closer to visually impaired children.
+              </p>
+            </div>
+
+            <!-- Right Column: 3 Key Experience & Impact Stats -->
+            <div class="story-stats-grid">
+              <div class="story-stat-item">
+                <div class="story-stat-num">20+</div>
+                <div class="story-stat-label">Years of Experience</div>
+              </div>
+              <div class="story-stat-item">
+                <div class="story-stat-num">35k+</div>
+                <div class="story-stat-label">Years of Experience</div>
+              </div>
+              <div class="story-stat-item">
+                <div class="story-stat-num">17</div>
+                <div class="story-stat-label">Years of Experience</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Scalloped Cloud Border -->
+          <div class="story-cloud-divider" aria-hidden="true">
+            <svg viewBox="0 140 1024 115" preserveAspectRatio="none" style="width: 100%; height: 100%; display: block;">
+              <path d="M 0 171 Q 4 171, 6 171.5 Q 8 172, 10 172.5 Q 12 173, 14 174 Q 16 175, 18 175.5 Q 20 176, 22 177 Q 24 178, 26 179 Q 28 180, 30 181.5 Q 32 183, 34 184 Q 36 185, 38 185.5 Q 40 186, 42 185.5 Q 44 185, 46 184.5 Q 48 184, 50 183.5 Q 52 183, 54 183 Q 56 183, 58 182.5 Q 60 182, 62 182 Q 64 182, 66 181.5 Q 68 181, 70 181 Q 72 181, 74 181.5 Q 76 182, 78 182 Q 80 182, 82 182.5 Q 84 183, 86 183 Q 88 183, 90 183.5 Q 92 184, 94 185 Q 96 186, 98 186.5 Q 100 187, 102 188 Q 104 189, 106 188.5 Q 108 188, 110 186 Q 112 184, 114 181.5 Q 116 179, 118 177.5 Q 120 176, 122 174.5 Q 124 173, 126 172 Q 128 171, 130 170.5 Q 132 170, 134 169 Q 136 168, 138 167.5 Q 140 167, 142 167 Q 144 167, 146 166.5 Q 148 166, 150 166 Q 152 166, 154 166 Q 156 166, 158 166 Q 160 166, 162 166.5 Q 164 167, 166 167 Q 168 167, 170 167.5 Q 172 168, 174 169 Q 176 170, 178 170.5 Q 180 171, 182 172 Q 184 173, 186 174 Q 188 175, 190 176 Q 192 177, 194 178 Q 196 179, 198 180.5 Q 200 182, 202 183.5 Q 204 185, 206 187 Q 208 189, 210 191 Q 212 193, 214 195.5 Q 216 198, 218 200 Q 220 202, 222 203.5 Q 224 205, 226 204.5 Q 228 204, 230 203.5 Q 232 203, 234 202.5 Q 236 202, 238 201.5 Q 240 201, 242 200.5 Q 244 200, 246 200 Q 248 200, 250 200 Q 252 200, 254 200 Q 256 200, 258 200.5 Q 260 201, 262 201.5 Q 264 202, 266 202.5 Q 268 203, 270 203.5 Q 272 204, 274 204.5 Q 276 205, 278 205.5 Q 280 206, 282 207 Q 284 208, 286 208.5 Q 288 209, 290 208 Q 292 207, 294 204 Q 296 201, 298 198 Q 300 195, 302 193 Q 304 191, 306 189.5 Q 308 188, 310 186.5 Q 312 185, 314 184 Q 316 183, 318 182.5 Q 320 182, 322 181.5 Q 324 181, 326 180.5 Q 328 180, 330 179.5 Q 332 179, 334 179 Q 336 179, 338 179 Q 340 179, 342 179 Q 344 179, 346 179.5 Q 348 180, 350 180.5 Q 352 181, 354 181.5 Q 356 182, 358 182.5 Q 360 183, 362 183.5 Q 364 184, 366 185 Q 368 186, 370 187 Q 372 188, 374 189 Q 376 190, 378 191.5 Q 380 193, 382 194 Q 384 195, 386 196.5 Q 388 198, 390 200 Q 392 202, 394 204 Q 396 206, 398 208 Q 400 210, 402 211.5 Q 404 213, 406 212.5 Q 408 212, 410 211.5 Q 412 211, 414 210 Q 416 209, 418 208.5 Q 420 208, 422 207.5 Q 424 207, 426 206.5 Q 428 206, 430 205.5 Q 432 205, 434 204.5 Q 436 204, 438 204 Q 440 204, 442 204 Q 444 204, 446 204 Q 448 204, 450 204 Q 452 204, 454 204.5 Q 456 205, 458 205.5 Q 460 206, 462 206.5 Q 464 207, 466 207.5 Q 468 208, 470 208.5 Q 472 209, 474 209.5 Q 476 210, 478 211 Q 480 212, 482 212.5 Q 484 213, 486 214 Q 488 215, 490 216.5 Q 492 218, 494 219 Q 496 220, 498 221.5 Q 500 223, 502 224 Q 504 225, 506 226.5 Q 508 228, 510 228 Q 512 228, 514 226 Q 516 224, 518 221.5 Q 520 219, 522 217 Q 524 215, 526 213 Q 528 211, 530 209.5 Q 532 208, 534 207 Q 536 206, 538 205 Q 540 204, 542 203 Q 544 202, 546 201 Q 548 200, 550 199.5 Q 552 199, 554 198.5 Q 556 198, 558 197.5 Q 560 197, 562 196.5 Q 564 196, 566 195.5 Q 568 195, 570 195 Q 572 195, 574 195 Q 576 195, 578 195 Q 580 195, 582 195 Q 584 195, 586 195.5 Q 588 196, 590 196 Q 592 196, 594 196.5 Q 596 197, 598 197.5 Q 600 198, 602 198.5 Q 604 199, 606 200 Q 608 201, 610 201.5 Q 612 202, 614 203 Q 616 204, 618 205 Q 620 206, 622 207 Q 624 208, 626 209 Q 628 210, 630 211.5 Q 632 213, 634 214.5 Q 636 216, 638 217.5 Q 640 219, 642 221 Q 644 223, 646 224.5 Q 648 226, 650 226 Q 652 226, 654 225 Q 656 224, 658 222.5 Q 660 221, 662 219.5 Q 664 218, 666 217 Q 668 216, 670 215 Q 672 214, 674 213 Q 676 212, 678 211.5 Q 680 211, 682 210 Q 684 209, 686 208.5 Q 688 208, 690 207.5 Q 692 207, 694 207 Q 696 207, 698 206.5 Q 700 206, 702 206 Q 704 206, 706 205.5 Q 708 205, 710 205 Q 712 205, 714 205 Q 716 205, 718 205.5 Q 720 206, 722 206 Q 724 206, 726 206 Q 728 206, 730 206.5 Q 732 207, 734 207 Q 736 207, 738 207.5 Q 740 208, 742 208.5 Q 744 209, 746 209.5 Q 748 210, 750 210.5 Q 752 211, 754 211.5 Q 756 212, 758 213 Q 760 214, 762 214.5 Q 764 215, 766 216 Q 768 217, 770 218 Q 772 219, 774 220 Q 776 221, 778 222 Q 780 223, 782 224.5 Q 784 226, 786 227 Q 788 228, 790 229.5 Q 792 231, 794 232.5 Q 796 234, 798 235.5 Q 800 237, 802 238.5 Q 804 240, 806 241.5 Q 808 243, 810 245 Q 812 247, 814 247.5 Q 816 248, 818 246.5 Q 820 245, 822 242.5 Q 824 240, 826 238 Q 828 236, 830 234 Q 832 232, 834 230.5 Q 836 229, 838 227.5 Q 840 226, 842 225 Q 844 224, 846 223.5 Q 848 223, 850 222 Q 852 221, 854 220.5 Q 856 220, 858 219.5 Q 860 219, 862 218.5 Q 864 218, 866 218 Q 868 218, 870 218 Q 872 218, 874 218.5 Q 876 219, 878 219 Q 880 219, 882 219.5 Q 884 220, 886 220.5 Q 888 221, 890 221.5 Q 892 222, 894 222.5 Q 896 223, 898 224 Q 900 225, 902 226 Q 904 227, 906 228 Q 908 229, 910 230 Q 912 231, 914 232.5 Q 916 234, 918 235 Q 920 236, 922 237.5 Q 924 239, 926 240.5 Q 928 242, 930 244 Q 932 246, 934 247.5 Q 936 249, 938 248.5 Q 940 248, 942 246 Q 944 244, 946 241.5 Q 948 239, 950 236.5 Q 952 234, 954 232.5 Q 956 231, 958 229.5 Q 960 228, 962 226.5 Q 964 225, 966 223.5 Q 968 222, 970 221 Q 972 220, 974 219 Q 976 218, 978 217 Q 980 216, 982 215.5 Q 984 215, 986 214.5 Q 988 214, 990 213.5 Q 992 213, 994 212.5 Q 996 212, 998 211.5 Q 1000 211, 1002 211 Q 1004 211, 1006 211 Q 1008 211, 1010 211 Q 1012 211, 1014 211 Q 1016 211, 1018 211.5 Q 1020 212, 1022 212 L 1024 212 L 1024 255 L 0 255 Z" fill="#FFFFFF"></path>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Direct Contact Strip for CSR / Institutional Inquiries -->
+        <div class="story-contact-strip">
+          <div class="contact-strip-left">
+            <span class="badge-pill badge-green"><span class="badge-dot"></span> Institutional &amp; CSR Collaboration</span>
+            <p>Looking to sponsor school kits or deploy Vithara in your region?</p>
+          </div>
+          <div class="contact-strip-right">
+            <a href="mailto:contact@nexyuga.com" class="btn btn-primary btn-rolling">
+              <div class="btn-rolling-track">
+                <span class="btn-rolling-text">Connect With Us (contact@nexyuga.com)</span>
+                <span class="btn-rolling-text">Connect With Us (contact@nexyuga.com)</span>
+              </div>
+              <span class="btn-icon-right">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TRUSTED BY HEALTHCARE PROVIDERS SECTION (Institutional Trust & Validation)
+       High-Fidelity Overlapping Circular Badges with Authentic Vector SVGs
+       ========================================================================== -->
+  <section class="trusted-providers-section" id="trusted-by" aria-label="Trusted Healthcare Providers">
+    <div class="trusted-providers-container">
+      <div class="trusted-kicker-pill">
+        <span class="trusted-kicker-dot"></span>
+        <span>Institutional Trust &amp; Healthcare Partnerships</span>
+      </div>
+
+      <h2 class="trusted-providers-title">Trusted By 100+ Healthcare Providers</h2>
+      
+      <p class="trusted-providers-subtitle">
+        Partnering with premier healthcare systems, pediatric foundations, and academic medical centers to advance tactile literacy worldwide.
+      </p>
+      
+      <div class="trusted-badges-cluster" role="list">
+        
+        <!-- Badge 1: Community Health Alliance -->
+        <div class="trusted-badge-disc badge-z-1" role="listitem" tabindex="0" data-provider="Community Health Alliance" aria-label="Community Health Alliance">
+          <svg class="provider-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="27" cy="14" r="3.2" fill="#70C041"/>
+            <circle cx="16" cy="20" r="3.2" fill="#F36C21"/>
+            <circle cx="24" cy="27" r="2.8" fill="#00AEEF"/>
+            <path d="M14 24C13.2 29.5 17 35.5 24 35.5C30.5 35.5 33.5 29.5 32.5 23.5" stroke="#70C041" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="M13.5 23C13.5 18 17.5 15.5 22 15.5" stroke="#F36C21" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="M22 28.5C25 28 27.5 30 27 33C25 34.5 21 34 19 32" stroke="#00AEEF" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+          <span class="badge-tooltip">Community Health Alliance</span>
+        </div>
+
+        <!-- Badge 2: Academic Medical Crest (Blue Shield with columns) -->
+        <div class="trusted-badge-disc badge-z-2" role="listitem" tabindex="0" data-provider="Academic Health Shield" aria-label="Academic Health Shield">
+          <svg class="provider-logo-svg" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 18H23V27C23 31.5 19.5 35 15.5 35.5C14.8 32.5 14 29.8 14 27V18Z" stroke="#1D4ED8" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M31 18H40V27C40 29.8 39.2 32.5 38.5 35.5C34.5 35 31 31.5 31 27V18Z" stroke="#1D4ED8" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M20 18H34V28C34 34.5 29 39.5 27 41C25 39.5 20 34.5 20 28V18Z" stroke="#1D4ED8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <span class="badge-tooltip">Academic Health Shield</span>
+        </div>
+
+        <!-- Badge 3: CrossHealth Systems (Blue & Green 4-Corner Cross) -->
+        <div class="trusted-badge-disc badge-z-3" role="listitem" tabindex="0" data-provider="CrossHealth Systems" aria-label="CrossHealth Systems">
+          <svg class="provider-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 22V16C14 14.9 14.9 14 16 14H22V17.5H17.5V22H14Z" fill="#0284C7"/>
+            <path d="M34 22V16C34 14.9 33.1 14 32 14H26V17.5H30.5V22H34Z" fill="#0284C7"/>
+            <path d="M14 26V32C14 33.1 14.9 34 16 34H22V30.5H17.5V26H14Z" fill="#16A34A"/>
+            <path d="M34 26V32C34 33.1 33.1 34 32 34H26V30.5H30.5V26H34Z" fill="#16A34A"/>
+          </svg>
+          <span class="badge-tooltip">CrossHealth Systems</span>
+        </div>
+
+        <!-- Badge 4: Hope Care Foundation (Maroon Shield with Leaping Figure) -->
+        <div class="trusted-badge-disc badge-z-4" role="listitem" tabindex="0" data-provider="Hope Care Foundation" aria-label="Hope Care Foundation">
+          <svg class="provider-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 14H33V25C33 32 26 37.5 24 38.5C22 37.5 15 32 15 25V14Z" fill="#881337"/>
+            <ellipse cx="24" cy="19" rx="2.4" ry="2.2" fill="#FFFFFF"/>
+            <path d="M18.5 24C21 21.2 27 21.2 29.5 24C27 23 21 23 18.5 24Z" fill="#FFFFFF"/>
+            <path d="M21 23.5C21.8 28 26.2 28 27 23.5C25.5 31.5 22.5 31.5 21 23.5Z" fill="#FFFFFF"/>
+          </svg>
+          <span class="badge-tooltip">Hope Care Foundation</span>
+        </div>
+
+        <!-- Badge 5: Mount Sinai Health System (Cyan & Magenta Ribbon Peaks) -->
+        <div class="trusted-badge-disc badge-z-5" role="listitem" tabindex="0" data-provider="Mount Sinai Health System" aria-label="Mount Sinai Health System">
+          <svg class="provider-logo-svg" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="39" cy="15" r="1.3" fill="#E10098"/>
+            <path d="M14 36L26 16L29 21L19 36H14Z" fill="#00AEEF"/>
+            <path d="M19 36L29 21L32 26L24 36H19Z" fill="#009BD9"/>
+            <path d="M38 36L26 16L23 21L33 36H38Z" fill="#E10098"/>
+            <path d="M33 36L23 21L20 26L28 36H33Z" fill="#C70081"/>
+            <path d="M26 36L24.5 33.5L27.5 33.5L26 36Z" fill="#750059"/>
+          </svg>
+          <span class="badge-tooltip">Mount Sinai Health System</span>
+        </div>
+
+        <!-- Badge 6: Metro Academic Health (Midnight Blue Fluted Shield) -->
+        <div class="trusted-badge-disc badge-z-6" role="listitem" tabindex="0" data-provider="Metro Academic Health" aria-label="Metro Academic Health">
+          <svg class="provider-logo-svg" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 14H33V28C33 36 28.5 40.5 24 41.5C19.5 40.5 15 36 15 28V14Z" fill="#0F2042"/>
+            <rect x="19" y="14" width="2" height="15" rx="1" fill="#FFFFFF"/>
+            <rect x="23" y="14" width="2" height="17" rx="1" fill="#FFFFFF"/>
+            <rect x="27" y="14" width="2" height="15" rx="1" fill="#FFFFFF"/>
+            <path d="M18.5 29C19 33.5 21.5 36 24 36.5C26.5 36 29 33.5 29.5 29H31C30 35 27 38.5 24 39.5C21 38.5 18 35 17 29H18.5Z" fill="#FFFFFF"/>
+          </svg>
+          <span class="badge-tooltip">Metro Academic Health</span>
+        </div>
+
+        <!-- Badge 7: Tree of Life Wellness (Green Canopy, Reaching Figures, Horizon) -->
+        <div class="trusted-badge-disc badge-z-7" role="listitem" tabindex="0" data-provider="Tree of Life Wellness" aria-label="Tree of Life Wellness">
+          <svg class="provider-logo-svg" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="25" cy="13" r="2.2" fill="#4CAF50"/>
+            <circle cx="21" cy="14" r="1.8" fill="#66BB6A"/>
+            <circle cx="29" cy="14" r="1.8" fill="#43A047"/>
+            <circle cx="17.5" cy="16.5" r="2" fill="#4CAF50"/>
+            <circle cx="32.5" cy="16.5" r="2" fill="#388E3C"/>
+            <circle cx="25" cy="17" r="2.4" fill="#2E7D32"/>
+            <circle cx="20.5" cy="18" r="2" fill="#43A047"/>
+            <circle cx="29.5" cy="18" r="2" fill="#4CAF50"/>
+            <circle cx="15" cy="20" r="1.7" fill="#66BB6A"/>
+            <circle cx="35" cy="20" r="1.7" fill="#43A047"/>
+            <circle cx="23" cy="21.5" r="2.1" fill="#388E3C"/>
+            <circle cx="27" cy="21.5" r="2.1" fill="#4CAF50"/>
+            <circle cx="18" cy="22.5" r="1.9" fill="#2E7D32"/>
+            <circle cx="32" cy="22.5" r="1.9" fill="#66BB6A"/>
+            <circle cx="25" cy="26" r="2.2" fill="#FB8C00"/>
+            <path d="M23.5 29.5C24.5 28.5 25.5 28.5 26.5 29.5L26 35H24L23.5 29.5Z" fill="#FB8C00"/>
+            <path d="M20 34C20.5 29.5 23 27 25 27C27 27 29.5 29.5 30 34" stroke="#0284C7" stroke-width="2" stroke-linecap="round"/>
+            <path d="M14 36.5C18 35.5 32 35.5 36 36.5" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="badge-tooltip">Tree of Life Wellness</span>
+        </div>
+
+      </div>
+
+      <!-- Institutional Trust Metrics Row -->
+      <div class="trusted-metrics-row">
+        <div class="trusted-metric-card">
+          <span class="trusted-metric-val">100+</span>
+          <span class="trusted-metric-label">Healthcare &amp; NGO Partners</span>
+        </div>
+        <div class="trusted-metric-divider" aria-hidden="true"></div>
+        <div class="trusted-metric-card">
+          <span class="trusted-metric-val">15,000+</span>
+          <span class="trusted-metric-label">Assistive Kits Deployed</span>
+        </div>
+        <div class="trusted-metric-divider" aria-hidden="true"></div>
+        <div class="trusted-metric-card">
+          <span class="trusted-metric-val">99.4%</span>
+          <span class="trusted-metric-label">Clinical &amp; Educator Approval</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SITE FOOTER (Exact QuantumX Design Specification)
+       Reference: User uploaded screenshot (reference_upright.png)
+       ========================================================================== -->
+  <footer class="site-footer" id="footer">
+    <div class="container footer-container">
+      
+      <!-- Top CTA Header Row -->
+      <div class="footer-cta-row">
+        <div class="footer-cta-text">
+          <h2 class="footer-cta-title">See how accessible learning looks like</h2>
+          <p class="footer-cta-desc">Creating secure, scalable, and inclusive assistive infrastructure for the future of universal education.</p>
+        </div>
+        <div class="footer-cta-action">
+          <a href="#partner" class="footer-join-pill" aria-label="Join With Us">
+            <span class="footer-join-pill-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </span>
+            <span class="footer-join-pill-label">Join With Us</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Horizontal Divider Line -->
+      <div class="footer-rule" aria-hidden="true"></div>
+
+      <!-- 5-Column Navigation Grid -->
+      <div class="footer-cols-grid">
+        <!-- Col 1: Product -->
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-heading">Product</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#products">NEX-Touch Tablet</a></li>
+            <li><a href="#products">NEX-Slate Digital</a></li>
+            <li><a href="#products">Braille Audio Engine</a></li>
+            <li><a href="#journey">Tactile Display</a></li>
+            <li><a href="#products">Assistive Sandbox</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 2: Developers -->
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-heading">Developers</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#partner">Documentation</a></li>
+            <li><a href="#partner">API Reference</a></li>
+            <li><a href="#partner">SDKs &amp; Tools</a></li>
+            <li><a href="#partner">Hardware Standards</a></li>
+            <li><a href="https://github.com/nexyuga" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Company -->
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-heading">Company</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home">About Us</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="#journey">Blog</a></li>
+            <li><a href="#trusted-by">Press Kit</a></li>
+            <li><a href="mailto:contact@nexyuga.com">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Resources -->
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-heading">Resources</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#faq">Help Center</a></li>
+            <li><a href="#journey">Community</a></li>
+            <li><a href="#partner">Security</a></li>
+            <li><a href="#trusted-by">Status</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Legal -->
+        <div class="footer-nav-col">
+          <h4 class="footer-nav-heading">Legal</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#terms">Terms of Service</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+            <li><a href="#cookies">Cookie Policy</a></li>
+            <li><a href="#disclosure">Risk Disclosure</a></li>
+            <li><a href="#compliance">Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Horizontal Divider Line -->
+      <div class="footer-rule" aria-hidden="true"></div>
+
+      <!-- Bottom Meta Row -->
+      <div class="footer-meta-row">
+        <div class="footer-copyright">
+          &copy; 2026 Nexyuga. All rights reserved.
+        </div>
+        <div class="footer-mission-statement">
+          Empowering the accessible future through innovation, security, and accessibility.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js?v=18"></script>
+</body>
+</html>
