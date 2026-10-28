@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initCsrForm();
   initTestimonialModal();
+  initGallerySideScroll();
 });
 
 /**
@@ -507,3 +508,117 @@ function initTestimonialModal() {
     }
   });
 }
+
+/**
+ * 9. VISUAL GALLERY SIDE-SCROLL CAROUSEL (Single Desktop Frame)
+ * Smooth arrow navigation, touch/mouse drag-to-scroll, wheel gestures, and dynamic progress
+ */
+function initGallerySideScroll() {
+  const viewport = document.getElementById('galleryViewport');
+  const track = document.getElementById('galleryTrack');
+  const prevBtn = document.getElementById('galleryPrevBtn');
+  const nextBtn = document.getElementById('galleryNextBtn');
+  const counter = document.getElementById('galleryCounter');
+  const progress = document.getElementById('galleryProgress');
+
+  if (!viewport || !track) return;
+
+  const cards = track.querySelectorAll('.gallery-card');
+  const totalCards = cards.length;
+  if (totalCards === 0) return;
+
+  const getCardStep = () => {
+    const card = cards[0];
+    const style = window.getComputedStyle(track);
+    const gap = parseFloat(style.gap) || 20;
+    return card.offsetWidth + gap;
+  };
+
+  const updateControls = () => {
+    const maxScroll = viewport.scrollWidth - viewport.clientWidth;
+    const currentScroll = viewport.scrollLeft;
+
+    const cardStep = getCardStep();
+    const activeIndex = Math.min(totalCards, Math.max(1, Math.round(currentScroll / cardStep) + 1));
+
+    if (counter) {
+      counter.textContent = `0${activeIndex} / 0${totalCards}`;
+    }
+
+    if (progress && maxScroll > 0) {
+      const scrollRatio = Math.min(1, Math.max(0, currentScroll / maxScroll));
+      const minThumbPercent = (1 / totalCards) * 100;
+      const progressPercent = minThumbPercent + scrollRatio * (100 - minThumbPercent);
+      progress.style.width = `${progressPercent}%`;
+    }
+
+    if (prevBtn) {
+      prevBtn.disabled = currentScroll <= 6;
+    }
+    if (nextBtn) {
+      nextBtn.disabled = currentScroll >= maxScroll - 6;
+    }
+  };
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      viewport.scrollBy({ left: -getCardStep(), behavior: 'smooth' });
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      viewport.scrollBy({ left: getCardStep(), behavior: 'smooth' });
+    });
+  }
+
+  viewport.addEventListener('scroll', updateControls, { passive: true });
+  window.addEventListener('resize', updateControls, { passive: true });
+
+  // Mouse drag-to-scroll support for desktop
+  let isDown = false;
+  let startX = 0;
+  let scrollStart = 0;
+
+  viewport.addEventListener('mousedown', (e) => {
+    isDown = true;
+    viewport.classList.add('is-dragging');
+    startX = e.pageX - viewport.offsetLeft;
+    scrollStart = viewport.scrollLeft;
+  });
+
+  const stopDrag = () => {
+    if (!isDown) return;
+    isDown = false;
+    viewport.classList.remove('is-dragging');
+  };
+
+  viewport.addEventListener('mouseleave', stopDrag);
+  viewport.addEventListener('mouseup', stopDrag);
+
+  viewport.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - viewport.offsetLeft;
+    const walk = (x - startX) * 1.4;
+    viewport.scrollLeft = scrollStart - walk;
+  });
+
+  // Wheel interaction: scroll sideways when hovering over gallery
+  viewport.addEventListener('wheel', (e) => {
+    if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+      const maxScroll = viewport.scrollWidth - viewport.clientWidth;
+      if (maxScroll > 10) {
+        if ((e.deltaY > 0 && viewport.scrollLeft < maxScroll - 2) ||
+            (e.deltaY < 0 && viewport.scrollLeft > 2)) {
+          e.preventDefault();
+          viewport.scrollLeft += e.deltaY;
+        }
+      }
+    }
+  }, { passive: false });
+
+  // Initial update
+  updateControls();
+}
+

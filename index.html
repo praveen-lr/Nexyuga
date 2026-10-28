@@ -22,10 +22,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Oswald:wght@600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
   <!-- Design System CSS (Adorbit Architecture with Nexyuga Blue & Green) -->
-  <link rel="stylesheet" href="css/tokens.css?v=18">
-  <link rel="stylesheet" href="css/base.css?v=18">
-  <link rel="stylesheet" href="css/components.css?v=18">
-  <link rel="stylesheet" href="css/main.css?v=18">
+  <link rel="stylesheet" href="css/tokens.css?v=20">
+  <link rel="stylesheet" href="css/base.css?v=20">
+  <link rel="stylesheet" href="css/components.css?v=20">
+  <link rel="stylesheet" href="css/main.css?v=20">
 </head>
 <body>
 
@@ -233,233 +233,356 @@
   </section>
 
   <!-- ==========================================================================
-       FEATURED VIDEO SHOWCASE SECTION (Adorbit Architecture - 2nd Section)
-       Spotlights the official Nexyuga assistive innovation YouTube video
+       SECOND SECTION (Exact Match to 2Nd section.png Reference Layout)
+       Top Row: Left Video Card + Right Header/Copy ("See Nexyuga In Action")
+       Bottom Row: 3 Feature Cards (2 Grid Metric Cards + 1 Scenic Scalable Results Card)
        ========================================================================== -->
   <section class="video-showcase-section" id="video-tour" aria-label="Nexyuga Product Video Showcase">
     <div class="video-showcase-container">
       
-      <!-- Adorbit Signature Kicker Pill -->
-      <div class="video-kicker-pill">
-        <span class="video-kicker-dot"></span>
-        <span>Assistive Technology In Action</span>
-      </div>
+      <!-- Top Row: Video on Left, Header & Description on Right -->
+      <div class="section2-top-row">
+        
+        <!-- Left: Video Card Container with Centered Play Button -->
+        <div class="section2-video-card" id="videoCardBezel">
+          <div class="section2-video-inner" id="videoContainer" data-video-id="U79oCZsotd8">
+            <div class="video-poster-wrapper" id="videoPoster">
+              <img src="assets/images/section2_video_clean.png" 
+                   alt="Nexyuga Assistive Technology Demonstration Video" 
+                   class="video-poster-img"
+                   loading="lazy">
 
-      <!-- Section Title & Subtitle -->
-      <h2 class="video-section-title">See Nexyuga In Action</h2>
-      <p class="video-section-subtitle">
-        Watch how our tactile books and audio-guided smart learning kits transform early education and build true independence for visually impaired children worldwide.
-      </p>
-
-      <!-- Adorbit Featured Video Card Bezel -->
-      <div class="video-card-bezel" id="videoCardBezel">
-        <div class="video-card-inner" id="videoContainer" data-video-id="U79oCZsotd8">
-          
-          <!-- High-Res Thumbnail Poster & Interactive Overlay -->
-          <div class="video-poster-wrapper" id="videoPoster">
-            <img src="https://i.ytimg.com/vi/U79oCZsotd8/maxresdefault.jpg" 
-                 alt="Nexyuga Assistive Learning Kit Demonstration Video" 
-                 class="video-poster-img"
-                 loading="lazy">
-            <div class="video-poster-vignette"></div>
-
-            <!-- Adorbit-Style Pulsing Center Play Button -->
-            <button class="video-play-btn" id="videoPlayBtn" aria-label="Play Nexyuga demonstration video">
-              <span class="video-play-pulse video-pulse-1" aria-hidden="true"></span>
-              <span class="video-play-pulse video-pulse-2" aria-hidden="true"></span>
-              <span class="video-play-disc">
-                <svg class="video-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M8 5.14v13.72a1 1 0 0 0 1.5.86l11-6.86a1 1 0 0 0 0-1.72L9.5 4.28a1 1 0 0 0-1.5.86z"/>
-                </svg>
-              </span>
-            </button>
-
-            <!-- Bottom Floating Badges (Adorbit Signature Glass Elements) -->
-            <div class="video-floating-bar" aria-hidden="true">
-              <div class="video-floating-badge-left">
-                <span class="video-live-dot"></span>
-                <span class="video-badge-text">Nexyuga Innovations • Tactile Learning Kits</span>
-              </div>
-              <div class="video-floating-badge-right">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
-                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path>
-                  <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
-                </svg>
-                <span>Click to Watch Video</span>
-              </div>
+              <!-- Centered White Circular Play Button with Dark Triangle -->
+              <button class="video-play-btn" id="videoPlayBtn" aria-label="Play Nexyuga demonstration video">
+                <span class="video-play-disc">
+                  <svg class="video-play-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <polygon points="8 5 19 12 8 19 8 5"></polygon>
+                  </svg>
+                </span>
+              </button>
             </div>
+
+            <!-- Dynamic YouTube Embed Slot -->
+            <div class="video-iframe-slot" id="videoIframeSlot"></div>
+          </div>
+        </div>
+
+        <!-- Right: Text Content Column (Left-Aligned per Reference) -->
+        <div class="section2-text-col">
+          <div class="section2-kicker-pill">
+            <svg class="section2-pill-bolt" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            <span>Rapid Optimization</span>
           </div>
 
-          <!-- YouTube Player Container (Loaded dynamically on user click) -->
-          <div class="video-iframe-slot" id="videoIframeSlot"></div>
+          <h2 class="section2-title">See Nexyuga In Action</h2>
+          <p class="section2-subtitle">
+            Watch how our tactile books and audio-guided smart learning kits transform early education and build true independence for visually impaired children worldwide.
+          </p>
         </div>
+
       </div>
 
-      <!-- External YouTube Link Pill -->
-      <div class="video-external-row">
-        <a href="https://youtu.be/U79oCZsotd8?si=mIFf_8U0kceyuQ2h" 
-           target="_blank" 
-           rel="noopener noreferrer" 
-           class="video-youtube-pill">
-          <svg class="youtube-svg-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
-            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-          </svg>
-          <span>Watch Directly on YouTube</span>
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-            <polyline points="15 3 21 3 21 9"></polyline>
-            <line x1="10" y1="14" x2="21" y2="3"></line>
-          </svg>
-        </a>
+      <!-- Bottom Row: 3 Feature Cards Grid -->
+      <div class="section2-cards-grid">
+        
+        <!-- Card 1: Data-Driven Campaign Adjustments -->
+        <div class="section2-metric-card">
+          <div class="section2-card-pill">
+            <svg class="section2-card-bolt" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            <span>Rapid Optimization</span>
+          </div>
+          <h3 class="section2-card-heading">Fast, data-driven campaign adjustments</h3>
+          <div class="section2-card-metric-wrap">
+            <div class="section2-card-stat">+92%</div>
+            <div class="section2-card-stat-label">Average Growth</div>
+          </div>
+        </div>
+
+        <!-- Card 2: Data-Driven Campaign Adjustments -->
+        <div class="section2-metric-card">
+          <div class="section2-card-pill">
+            <svg class="section2-card-bolt" width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            <span>Rapid Optimization</span>
+          </div>
+          <h3 class="section2-card-heading">Fast, data-driven campaign adjustments</h3>
+          <div class="section2-card-metric-wrap">
+            <div class="section2-card-stat">+92%</div>
+            <div class="section2-card-stat-label">Average Growth</div>
+          </div>
+        </div>
+
+        <!-- Card 3: Scalable Results Scenic Card -->
+        <div class="section2-scenic-card">
+          <h3 class="section2-scenic-heading">Scalable Results</h3>
+          <p class="section2-scenic-copy">No guesswork every is tested, structured, and optimized for growth.</p>
+        </div>
+
       </div>
 
     </div>
   </section>
 
   <!-- ==========================================================================
-       PROBLEM & MISSION SECTION (Editorial Light Canvas)
+       THE CHALLENGE WE SOLVE SECTION (Property Bento Reference Layout)
        ========================================================================== -->
   <section class="section section-light" id="about">
     <div class="container">
-      <div class="section-header">
-        <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 4px;">
-          <img src="assets/images/logo-dark.png" alt="Nexyuga Logo" style="height: 32px; width: auto; object-fit: contain;">
-          <div class="badge-pill badge-teal-light">
-            <span class="badge-dot"></span>
+      
+      <!-- Top Stat Strip with Vertical Dividers (Matched to Reference) -->
+      <div class="challenge-stat-strip">
+        <div class="challenge-stat-item">
+          <div class="challenge-stat-number">99%</div>
+          <div class="challenge-stat-label-wrap">
+            <span>Braille</span>
+            <span>Literacy Gap</span>
+          </div>
+        </div>
+        <div class="challenge-stat-item">
+          <div class="challenge-stat-number">90%+</div>
+          <div class="challenge-stat-label-wrap">
+            <span>Low-Income</span>
+            <span>Communities</span>
+          </div>
+        </div>
+        <div class="challenge-stat-item">
+          <div class="challenge-stat-number">10x</div>
+          <div class="challenge-stat-label-wrap">
+            <span>More</span>
+            <span>Affordable</span>
+          </div>
+        </div>
+        <div class="challenge-stat-item">
+          <div class="challenge-stat-number">100%</div>
+          <div class="challenge-stat-label-wrap">
+            <span>Independent</span>
+            <span>Learning</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Two-Column Bento Row -->
+      <div class="challenge-main-row">
+        <!-- Left Column: Story, Title & Action -->
+        <div class="challenge-content-col">
+          <div class="challenge-eyebrow">
+            <span class="challenge-eyebrow-dot"></span>
             <span>The Challenge We Solve</span>
           </div>
+          <h2 class="challenge-main-heading">
+            Most visually impaired children never get to learn independently.
+          </h2>
+          <p class="challenge-lead-text">
+            Over 90% of visually impaired individuals live in low-income settings. Conventional assistive aids are cluttered with high costs, rigid mechanical parts, and inaccessible distribution. Nexyuga rebuilt tactile learning from the ground up.
+          </p>
+          <a href="#products" class="challenge-cta-btn btn-rolling">
+            <div class="btn-rolling-track">
+              <span class="btn-rolling-text">Explore Our Solution</span>
+              <span class="btn-rolling-text">Explore Our Solution</span>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
         </div>
-        <h2>Most Visually Impaired Children Never Get to Learn Independently</h2>
-        <p class="section-subtitle">
-          Over 90% of visually impaired individuals live in low-income settings. Conventional assistive aids are cluttered with high costs, rigid mechanical parts, and inaccessible distribution. Nexyuga rebuilt tactile learning from the ground up.
-        </p>
+
+        <!-- Right Column: 3 Bento Cards (2 Top Cards + 1 Wide Bottom Card) -->
+        <div class="challenge-bento-grid">
+          <!-- Card 1: Mock Search Pill / Braille Literacy Gap -->
+          <div class="challenge-card">
+            <div class="challenge-mock-search" aria-hidden="true">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <span>Search Braille, STEM, Audio...</span>
+            </div>
+            <div>
+              <h3 class="challenge-card-title">The 99% Braille Gap</h3>
+              <p class="challenge-card-desc">
+                Less than 1% of visually impaired children in developing regions access interactive tactile books, causing lifelong learning barriers.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2: Green Shield Icon / Ending Sighted Reliance -->
+          <div class="challenge-card">
+            <div class="challenge-shield-icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <polyline points="9 12 11 14 15 10"></polyline>
+              </svg>
+            </div>
+            <div>
+              <h3 class="challenge-card-title">Ending Sighted Reliance</h3>
+              <p class="challenge-card-desc">
+                Children shouldn't need a constant sighted tutor. Multi-sensory tactile-audio feedback unlocks self-paced study.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3: Wide Card with Badge & Floating Preview Card -->
+          <div class="challenge-card-wide">
+            <div class="challenge-map-bg" aria-hidden="true"></div>
+            
+            <div class="challenge-wide-left">
+              <div class="challenge-hot-badge">
+                <span class="challenge-badge-dot"></span>
+                <span>CSR Ready</span>
+              </div>
+              <h3 class="challenge-card-title">Built for Accessible Scale</h3>
+              <p class="challenge-card-desc">
+                Conventional aids cost ₹40k–₹1.5L. Nexyuga engineered durable, low-cost tactile books for state schools and NGOs.
+              </p>
+            </div>
+
+            <div class="challenge-wide-right">
+              <div class="challenge-preview-card">
+                <div class="challenge-preview-img-wrap">
+                  <img src="assets/images/gallery_prototype_testing.png" alt="Vithara Tactile Learning Kit" class="challenge-preview-img" loading="lazy">
+                  <span class="challenge-preview-chip">
+                    <svg width="8" height="8" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+                    10x Scalable
+                  </span>
+                </div>
+                <div class="challenge-preview-meta">
+                  <h4 class="challenge-preview-title">Vithara Learning Kit</h4>
+                  <div class="challenge-preview-loc">
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>Special Education Lab</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="services-bento-grid">
-        <!-- Problem Card 1 -->
-        <div class="card-bento service-card-span-7">
-          <div class="card-icon-wrap">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="12" y1="8" x2="12" y2="12"></line>
-              <line x1="12" y1="16" x2="12.01" y2="16"></line>
-            </svg>
-          </div>
-          <span class="badge-pill badge-blue" style="margin-bottom: 12px;">Severe Literacy Bottleneck</span>
-          <h3>The 99% Braille Literacy Gap</h3>
-          <p>
-            In developing regions, less than 1% of visually impaired children have access to interactive Braille or tactile books. Without early tactile literacy, children face permanent educational barriers in STEM and higher education.
-          </p>
-
-          <div class="problem-vs-box">
-            <div class="problem-col legacy">
-              <div class="problem-col-title">CONVENTIONAL AIDS</div>
-              <div class="problem-col-highlight">₹40,000 – ₹1,50,000</div>
-              <div class="problem-col-desc">Prohibitive cost for government schools &amp; NGOs</div>
-            </div>
-            <div class="problem-col nexyuga">
-              <div class="problem-col-title">NEXYUGA VITHARA</div>
-              <div class="problem-col-highlight">Accessible &amp; CSR-Ready</div>
-              <div class="problem-col-desc">Durable, tactile-audio books built for scale</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Problem Card 2 -->
-        <div class="card-bento service-card-span-5 green-accent">
-          <div class="card-icon-wrap">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
-          </div>
-          <span class="badge-pill badge-green" style="margin-bottom: 12px;">Independence First</span>
-          <h3>Ending Complete Sighted Reliance</h3>
-          <p>
-            Children shouldn't need a continuous sighted tutor just to read a page. Vithara combines raised tactile diagrams with smart audio feedback so a child can explore and repeat independently at their own pace.
-          </p>
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       PRODUCTS SECTION (Vithara & Knotnex Bento Grid)
+       PRODUCTS SECTION (Reference-Inspired Core Innovations Bento)
        ========================================================================== -->
   <section class="section section-light" id="products">
     <div class="container">
-      <div class="section-header">
-        <div class="badge-pill badge-green">
-          <span class="badge-dot"></span>
-          <span>Core Innovations</span>
+      <!-- Reference-Style Split Header -->
+      <div class="ref-tech-header-split">
+        <div class="ref-tech-header-left">
+          <div class="badge-pill badge-green" style="margin-bottom: 8px;">
+            <span class="badge-dot"></span>
+            <span>Core Innovations</span>
+          </div>
+          <h2 class="ref-section-title-big">Technology That Creates Independence in Education</h2>
         </div>
-        <h2>Technology That Creates Independence in Education</h2>
-        <p class="section-subtitle">
-          Two complementary solutions designed to make classroom learning tactile, joyful, and connected to lifelong community opportunities.
-        </p>
+        <div class="ref-tech-header-right">
+          <p class="ref-section-subtitle-right">
+            Two complementary solutions designed to make classroom learning tactile, joyful, and connected to lifelong community opportunities.
+          </p>
+        </div>
       </div>
 
-      <div class="services-bento-grid">
-        <!-- Product 1: Vithara -->
-        <div class="card-bento service-card-span-7">
-          <div class="card-icon-wrap">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+      <!-- Reference-Style 3-Column Bento Grid -->
+      <div class="ref-tech-bento-grid">
+        <!-- Col 1: Vithara Tactile Audio Innovation Card (with dot matrix illustration) -->
+        <div class="ref-card ref-card-tactile">
+          <div class="ref-tactile-illustration-wrap" aria-hidden="true">
+            <svg width="220" height="150" viewBox="0 0 220 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Concentric soundwaves/ripples -->
+              <circle cx="110" cy="75" r="65" stroke="rgba(1, 151, 178, 0.12)" stroke-width="1.5" stroke-dasharray="4 4" />
+              <circle cx="110" cy="75" r="45" stroke="rgba(1, 151, 178, 0.18)" stroke-width="1.5" />
+              <circle cx="110" cy="75" r="25" stroke="rgba(90, 203, 42, 0.3)" stroke-width="1.5" />
+              <!-- Dot Matrix Grid -->
+              <circle cx="70" cy="45" r="4" fill="rgba(6, 25, 30, 0.2)" />
+              <circle cx="90" cy="45" r="4" fill="#0197B2" />
+              <circle cx="110" cy="45" r="5" fill="#5ACB2A" />
+              <circle cx="130" cy="45" r="4" fill="#0197B2" />
+              <circle cx="150" cy="45" r="4" fill="rgba(6, 25, 30, 0.2)" />
+              
+              <circle cx="70" cy="75" r="4" fill="#0197B2" />
+              <circle cx="90" cy="75" r="5" fill="#5ACB2A" />
+              <circle cx="110" cy="75" r="7" fill="#0197B2" />
+              <circle cx="130" cy="75" r="5" fill="#5ACB2A" />
+              <circle cx="150" cy="75" r="4" fill="#0197B2" />
+              
+              <circle cx="70" cy="105" r="4" fill="rgba(6, 25, 30, 0.2)" />
+              <circle cx="90" cy="105" r="4" fill="#0197B2" />
+              <circle cx="110" cy="105" r="5" fill="#5ACB2A" />
+              <circle cx="130" cy="105" r="4" fill="#0197B2" />
+              <circle cx="150" cy="105" r="4" fill="rgba(6, 25, 30, 0.2)" />
+
+              <!-- Active pulse indicators -->
+              <circle cx="110" cy="75" r="14" stroke="#0197B2" stroke-width="1.5" opacity="0.6"/>
             </svg>
           </div>
-          <div style="display: flex; gap: 8px; margin-bottom: 12px;">
-            <span class="badge-pill badge-blue">Product 01</span>
-            <span class="badge-pill badge-green">Tactile &amp; Audio</span>
-          </div>
-          <h3>Meet Vithara</h3>
-          <p>
-            An affordable, durable tactile book system with embedded audio modules. Enables blind and low-vision children to independently touch, feel, and master Braille, STEM concepts, and foundational literacy without constant supervision.
-          </p>
-
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: var(--space-6);">
-            <div style="background: #f6fafd; padding: 14px; border-radius: 12px; border: 1px solid rgba(1, 151, 178, 0.12);">
-              <div style="font-weight: 600; color: var(--color-brand-blue); font-size: 0.85rem;">Literature</div>
-              <div style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 4px;">Alphabets, Braille letters, phonics</div>
-            </div>
-            <div style="background: #f6fafd; padding: 14px; border-radius: 12px; border: 1px solid rgba(1, 151, 178, 0.12);">
-              <div style="font-weight: 600; color: #2e7d32; font-size: 0.85rem;">Mathematics</div>
-              <div style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 4px;">Counting, shapes, tactile geometry</div>
-            </div>
-            <div style="background: #f6fafd; padding: 14px; border-radius: 12px; border: 1px solid rgba(1, 151, 178, 0.12);">
-              <div style="font-weight: 600; color: var(--color-brand-blue); font-size: 0.85rem;">Science</div>
-              <div style="font-size: 0.75rem; color: var(--color-text-muted); margin-top: 4px;">Audio-described diagrams &amp; textures</div>
+          <div>
+            <h3 class="ref-card-title-lg">Vithara Tactile System</h3>
+            <p class="ref-card-desc-clean">
+              An affordable, durable tactile book system with embedded audio modules. Enables blind and low-vision children to independently touch, feel, and master Braille, phonetics, and STEM concepts.
+            </p>
+            <div class="ref-micro-tags">
+              <span class="ref-micro-tag">Capacitive Touch</span>
+              <span class="ref-micro-tag">Instant Audio Phonics</span>
+              <span class="ref-micro-tag">Durable Tactile Paper</span>
             </div>
           </div>
         </div>
 
-        <!-- Product 2: Knotnex -->
-        <div class="card-bento service-card-span-5 green-accent">
-          <div class="card-icon-wrap">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="18" cy="5" r="3"></circle>
-              <circle cx="6" cy="12" r="3"></circle>
-              <circle cx="18" cy="19" r="3"></circle>
-              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-            </svg>
-          </div>
-          <div style="display: flex; gap: 8px; margin-bottom: 12px;">
-            <span class="badge-pill badge-green">Product 02</span>
-            <span class="badge-pill badge-dark">Digital Network</span>
-          </div>
-          <h3>Meet Knotnex</h3>
-          <p>
-            An inclusive digital ecosystem connecting visually impaired youth, educators, parents, and accessibility mentors. Discover tactile study guides, peer mentorship, audio learning repositories, and assistive career opportunities.
-          </p>
-
-          <div style="margin-top: auto; padding-top: var(--space-4);">
-            <div class="metric-pill green" style="width: 100%; justify-content: center; padding: 10px;">
-              Accessible Resources • Mentorship • Peer Community
+        <!-- Col 2: Stacked Subcards (Curriculum & Community) -->
+        <div class="ref-stacked-col">
+          <!-- Top Subcard: Curriculum -->
+          <div class="ref-subcard">
+            <div>
+              <h3 class="ref-subcard-title">Curriculum-Aligned Modules</h3>
+              <p class="ref-subcard-desc">
+                Structured tactile courses covering phonetics, counting, tactile geometry, and audio-described science diagrams.
+              </p>
             </div>
+            <div class="ref-sub-pills">
+              <span class="ref-sub-pill">Literature &amp; Braille</span>
+              <span class="ref-sub-pill">Tactile Math</span>
+              <span class="ref-sub-pill">Audio Science</span>
+            </div>
+          </div>
+
+          <!-- Bottom Subcard: Community & Mentorship (with Avatar Stack) -->
+          <div class="ref-subcard">
+            <div>
+              <h3 class="ref-subcard-title">Knotnex Community &amp; Mentorship</h3>
+              <div class="ref-avatar-stack">
+                <img src="assets/images/testimonial-priya.jpg" alt="Priya" class="ref-avatar">
+                <img src="assets/images/testimonial-david.jpg" alt="David" class="ref-avatar">
+                <img src="assets/images/testimonial-elena.jpg" alt="Elena" class="ref-avatar">
+                <img src="assets/images/testimonial-marcus.jpg" alt="Marcus" class="ref-avatar">
+                <span class="ref-avatar-counter">+500</span>
+              </div>
+              <p class="ref-subcard-desc">
+                An inclusive digital ecosystem connecting visually impaired youth, educators, parents, and accessibility mentors worldwide.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 3: Tall Image Card with Overlay and Circular White Arrow -->
+        <div class="ref-card ref-card-tall">
+          <img src="assets/images/gallery_buddybook_presentation.png" alt="Classroom and Partner Demonstration" class="ref-tall-img" loading="lazy">
+          <div class="ref-tall-overlay">
+            <span class="ref-tall-text">See real moments from our deployments.</span>
+            <a href="#gallery" class="ref-btn-arrow-white" aria-label="View Field Deployments">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -467,98 +590,146 @@
   </section>
 
   <!-- ==========================================================================
-       VISUAL GALLERY & FIELD DEPLOYMENTS (Using User Images)
+       VISUAL GALLERY & FIELD DEPLOYMENTS (Single Desktop Frame Side-Scroll Carousel)
        ========================================================================== -->
-  <section class="section section-light" id="gallery">
-    <div class="container">
-      <div class="section-header">
-        <div class="badge-pill badge-teal-light">
-          <span class="badge-dot"></span>
-          <span>Field Deployments &amp; Validation</span>
+  <section class="section section-light gallery-frame-section" id="gallery">
+    <div class="container gallery-container">
+      
+      <!-- Split Header: Title on Left • Controls & Counter on Right -->
+      <div class="gallery-header-row">
+        <div class="gallery-header-text">
+          <div class="badge-pill badge-teal-light" style="margin-bottom: 8px;">
+            <span class="badge-dot"></span>
+            <span>Field Deployments &amp; Validation</span>
+          </div>
+          <h2 class="gallery-section-title">Hands-On Crafts, Classrooms &amp; Multi-Sensory Moments</h2>
+          <p class="gallery-section-subtitle">
+            Real moments from prototype testing, student engagement, national innovation summits, and community interactions.
+          </p>
         </div>
-        <h2>Hands-On Crafts, Classrooms &amp; Multi-Sensory Moments</h2>
-        <p class="section-subtitle">
-          Real moments from prototype testing, student engagement, national innovation summits, and community interactions.
-        </p>
+
+        <!-- Carousel Navigation Controls & Counter -->
+        <div class="gallery-nav-group">
+          <span class="gallery-counter" id="galleryCounter" aria-live="polite">01 / 04</span>
+          <div class="gallery-nav-buttons">
+            <button class="gallery-nav-btn gallery-nav-prev" id="galleryPrevBtn" aria-label="Previous gallery slide" title="Previous slide">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7"/>
+              </svg>
+            </button>
+            <button class="gallery-nav-btn gallery-nav-next" id="galleryNextBtn" aria-label="Next gallery slide" title="Next slide">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
 
-      <div class="projects-grid">
-        <!-- Gallery 1: Prototype Testing -->
-        <article class="project-card">
-          <div class="project-image-wrap">
-            <img src="assets/images/gallery_prototype_testing.png" alt="Prototype Testing and Hardware Prototyping" loading="lazy">
-          </div>
-          <div class="project-content">
-            <span class="badge-pill badge-blue" style="margin-bottom: 12px;">R&amp;D Lab &amp; Ergonomics</span>
-            <h3>Tactile Testing &amp; Audio Module Validation</h3>
-            <p>
-              Engineering the 6-dot Braille layout, sensory haptic feedback, and audio module durability with direct learner feedback.
-            </p>
-            <div class="project-metrics-row">
-              <span class="metric-pill">Active Prototyping</span>
-              <span class="metric-pill green">Multi-Sensory Feedback</span>
-              <span class="metric-pill">Field Tested</span>
+      <!-- Horizontal Side-Scroll Viewport -->
+      <div class="gallery-carousel-viewport" id="galleryViewport" tabindex="0" role="region" aria-label="Field Deployments Side-Scroll Carousel">
+        <div class="gallery-carousel-track" id="galleryTrack">
+          
+          <!-- Card 1: Prototype Testing -->
+          <article class="gallery-card" data-index="0">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/gallery_prototype_testing.png" alt="Prototype Testing and Hardware Prototyping" loading="lazy">
             </div>
-          </div>
-        </article>
+            <div class="gallery-card-body">
+              <div class="gallery-card-badge">
+                <span class="badge-pill badge-blue">R&amp;D Lab &amp; Ergonomics</span>
+              </div>
+              <h3 class="gallery-card-title">Tactile Testing &amp; Audio Module Validation</h3>
+              <p class="gallery-card-desc">
+                Engineering the 6-dot Braille layout, sensory haptic feedback, and audio module durability with direct learner feedback.
+              </p>
+              <div class="gallery-card-tags">
+                <span class="metric-pill">Active Prototyping</span>
+                <span class="metric-pill green">Multi-Sensory Feedback</span>
+                <span class="metric-pill">Field Tested</span>
+              </div>
+            </div>
+          </article>
 
-        <!-- Gallery 2: BuddyBook Presentation -->
-        <article class="project-card">
-          <div class="project-image-wrap">
-            <img src="assets/images/gallery_buddybook_presentation.png" alt="BuddyBook Presentation to Partners" loading="lazy">
-          </div>
-          <div class="project-content">
-            <span class="badge-pill badge-green" style="margin-bottom: 12px;">Ecosystem Demonstration</span>
-            <h3>BuddyBook Multi-Sensory Showcase</h3>
-            <p>
-              Demonstrating the integrated tactile-audio book system to special educators, disability foundations, and CSR directors.
-            </p>
-            <div class="project-metrics-row">
-              <span class="metric-pill">Special Educators</span>
-              <span class="metric-pill green">Curriculum Ready</span>
-              <span class="metric-pill">Live Feedback</span>
+          <!-- Card 2: BuddyBook Presentation -->
+          <article class="gallery-card" data-index="1">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/gallery_buddybook_presentation.png" alt="BuddyBook Presentation to Partners" loading="lazy">
             </div>
-          </div>
-        </article>
+            <div class="gallery-card-body">
+              <div class="gallery-card-badge">
+                <span class="badge-pill badge-green">Ecosystem Demonstration</span>
+              </div>
+              <h3 class="gallery-card-title">BuddyBook Multi-Sensory Showcase</h3>
+              <p class="gallery-card-desc">
+                Demonstrating the integrated tactile-audio book system to special educators, disability foundations, and CSR directors.
+              </p>
+              <div class="gallery-card-tags">
+                <span class="metric-pill">Special Educators</span>
+                <span class="metric-pill green">Curriculum Ready</span>
+                <span class="metric-pill">Live Feedback</span>
+              </div>
+            </div>
+          </article>
 
-        <!-- Gallery 3: Team at IIC Meet -->
-        <article class="project-card">
-          <div class="project-image-wrap">
-            <img src="assets/images/gallery_iic_meet_2025_team.png" alt="Nexyuga Team at IIC Meet 2025" loading="lazy">
-          </div>
-          <div class="project-content">
-            <span class="badge-pill badge-blue" style="margin-bottom: 12px;">National Recognition</span>
-            <h3>IIC Regional Meet 2025 • @PSGCAS</h3>
-            <p>
-              Nexyuga team representing inclusive education at the prestigious Institution's Innovation Council (IIC) Regional Meet.
-            </p>
-            <div class="project-metrics-row">
-              <span class="metric-pill">Ministry of Education (MIC)</span>
-              <span class="metric-pill green">AICTE Endorsed</span>
-              <span class="metric-pill">Top 75 Innovator</span>
+          <!-- Card 3: Team at IIC Meet -->
+          <article class="gallery-card" data-index="2">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/gallery_iic_meet_2025_team.png" alt="Nexyuga Team at IIC Meet 2025" loading="lazy">
             </div>
-          </div>
-        </article>
+            <div class="gallery-card-body">
+              <div class="gallery-card-badge">
+                <span class="badge-pill badge-blue">National Recognition</span>
+              </div>
+              <h3 class="gallery-card-title">IIC Regional Meet 2025 • @PSGCAS</h3>
+              <p class="gallery-card-desc">
+                Nexyuga team representing inclusive education at the prestigious Institution's Innovation Council (IIC) Regional Meet.
+              </p>
+              <div class="gallery-card-tags">
+                <span class="metric-pill">Ministry of Education (MIC)</span>
+                <span class="metric-pill green">AICTE Endorsed</span>
+                <span class="metric-pill">Top 75 Innovator</span>
+              </div>
+            </div>
+          </article>
 
-        <!-- Gallery 4: Founder Presentation -->
-        <article class="project-card">
-          <div class="project-image-wrap">
-            <img src="assets/images/gallery_iic_meet_2025_founder.png" alt="Founder Presentation at IIC Meet 2025" loading="lazy">
-          </div>
-          <div class="project-content">
-            <span class="badge-pill badge-green" style="margin-bottom: 12px;">Leadership &amp; Advocacy</span>
-            <h3>Founder Keynote &amp; Assistive Tech Pitch</h3>
-            <p>
-              Presenting Nexyuga’s vision for affordable inclusive learning to policymakers, venture leaders, and incubation directors.
-            </p>
-            <div class="project-metrics-row">
-              <span class="metric-pill">Policy Advocacy</span>
-              <span class="metric-pill green">Inclusive STEM</span>
-              <span class="metric-pill">Ecosystem Impact</span>
+          <!-- Card 4: Founder Presentation -->
+          <article class="gallery-card" data-index="3">
+            <div class="gallery-card-img-wrap">
+              <img src="assets/images/gallery_iic_meet_2025_founder.png" alt="Founder Presentation at IIC Meet 2025" loading="lazy">
             </div>
-          </div>
-        </article>
+            <div class="gallery-card-body">
+              <div class="gallery-card-badge">
+                <span class="badge-pill badge-green">Leadership &amp; Advocacy</span>
+              </div>
+              <h3 class="gallery-card-title">Founder Keynote &amp; Assistive Tech Pitch</h3>
+              <p class="gallery-card-desc">
+                Presenting Nexyuga’s vision for affordable inclusive learning to policymakers, venture leaders, and incubation directors.
+              </p>
+              <div class="gallery-card-tags">
+                <span class="metric-pill">Policy Advocacy</span>
+                <span class="metric-pill green">Inclusive STEM</span>
+                <span class="metric-pill">Ecosystem Impact</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
       </div>
+
+      <!-- Footer Bar: Visual Progress Track & Side Scroll Hint -->
+      <div class="gallery-footer-row">
+        <div class="gallery-progress-track" aria-hidden="true">
+          <div class="gallery-progress-thumb" id="galleryProgress"></div>
+        </div>
+        <div class="gallery-scroll-hint">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+          <span>Scroll, drag or use arrows to view more</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -1073,6 +1244,6 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="js/main.js?v=18"></script>
+  <script src="js/main.js?v=20"></script>
 </body>
 </html>
